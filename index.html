@@ -5,10 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./fonts/remixicon.css">
 </head>
 <body>
-    <h1>欢迎来到我的世界</h1>
-    <div id="box">哈哈</div>
+    <div class="resume">
+        <div class="header">
+            <img src="./imgs/avatar.png" alt="">
+
+            <div class="inf">
+                <h2 class="resume-title">个人简历</h2>
+                <div class="name-and-post">
+                    <span class="name bold">蒋磊</span>
+                    <p>
+                        意向岗位：
+                        <span class="bold">前端开发实习生</span>
+                    </p>
+                </div>
+
+                <div class="age">
+                    <i class="ri-calendar-2-line icon"></i>
+                    <span>年龄：21岁</span>
+                </div>
+                <div class="address">
+                    <i class="ri-map-pin-line icon"></i>
+                    <span>住址：大连</span>
+                </div>
+
+                <div class="phone">
+                    <i class="ri-cellphone-line icon"></i>
+                    <span>电话：17608165964</span>
+                </div>
+                <div class="mail">
+                    <i class="ri-mail-line icon"></i>
+                    <span>邮箱：1256396490@qq.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="edu">
+                    <h4 class="interval"><span>教育背景</span></h4>
+                    <div>
+                        <ul class="edu-bg">
+                            <li><strong>学校名称：</strong><span>大连民族大学</span></li>
+                            <li><strong>就读时间：</strong><span>2020-09~至今</span></li>
+                            <li><strong>所学专业：</strong><span>计算机科学与技术</span></li>
+                            <li><strong>学历学位：</strong><span>本科</span></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="campus">
+                    <h4 class="interval"><span>校园经历</span></h4>
+                    <div>
+                        <div class="campus-head bold">
+                            <span>2021-04~至今</span>
+                            <span>计算机学院超线程工作室</span>
+                            <span>前端开发</span>
+                        </div>
+                        <p>计算机学院优秀工作室，成员十余人，主要研究机器学习与深度学习、计算机视觉、Web 开发等，在工作室期间参
+                            与组织学习与竞赛，参与项目开发，涉及领域移动端、PC 端。</p>
+                    </div>
+                </li>
+                <li class="pro">
+                    <h4 class="interval"><span>项目经历</span></h4>
+                    <div class="project">
+                        <div class="title bold">
+                            <span>2022-09~2023-03</span>
+                            <span>教学数据分析可视化平台</span>
+                            <span>前后端同时开发</span>
+                        </div>
+                        <div>
+                            <p><span class="bold">项目描述：&nbsp;</span>学生数据的分析呈现，包括课程录入、成绩录入、数据分析、可视化呈现等功能。</p>
+                            <p><span
+                                    class="bold">技术栈：&nbsp;</span>Vue、Vue-Router、Vuex、Element-UI、Vant、Axios、ECharts、Node、Mysql。
+                            </p>
+                            <p><span class="bold">负责模块：&nbsp;</span>登录注册模块、首页模块、成绩录入模块、可视化呈现模块、权限模块、接口模块。</p>
+                            <div class="technicalImp">
+                                <span class="bold">技术实现：&nbsp;</span>
+                                <div>
+                                    <p>1. 引用阿里接口实现手机号登录注册</p>
+                                    <p>2. 对 Axios 进行二次封装，请求数据，并通过 Echarts 呈现可视化图像</p>
+                                    <p>3. 使用 Vuex 临时存储通用数据</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title bold">
+                            <span>2022-07~2022-08</span>
+                            <span>网易云音乐</span>
+                            <span>前端开发</span>
+                        </div>
+                        <div>
+                            <p><span class="bold">项目描述：&nbsp;</span>仿网易云音乐 App 的移动端程序，实现歌单的选择、歌曲的搜索播放以及切换、播放界面的展示、歌
+                                词的显示与快进，简单登录。</p>
+                            <p><span class="bold">技术栈：&nbsp;</span>Vue、Vue-Router、Vuex、Vant、Axios。</p>
+                            <p><span class="bold">负责模块：&nbsp;</span>登录模块、首页模块、歌单详情模块、歌曲详情模块、歌词模块。</p>
+                            <div class="technicalImp">
+                                <span class="bold">技术实现：&nbsp;</span>
+                                <div>
+                                    <p>1. 基于 Vant 组件库自定义搭建 UI 结构</p>
+                                    <p>2. 使用 Axios 请求数据并渲染</p>
+                                    <p>3. 使用 Vuex 临时存储通用数据</p>
+                                    <p>4. 使用 rem 实现自适应布局</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </li>
+                <li class="skill">
+                    <h4 class="interval"><span>软件技能</span></h4>
+                    <div class="skill-detail">
+                        <ul>
+                            <li>掌握 HTML/CSS/JavaScript 基础技术，有原生 js 开发经验</li>
+                            <li>掌握 Vue 框架和模块化开发思想、以及使用 Vue 全家桶进行项目开发</li>
+                            <li>熟练使用 Element-UI、Vant 等 UI 组件库进行项目开发</li>
+                            <li>基本掌握 TypeScript 基础技术以及能够使用 Node 进行简单的服务器搭建</li>
+                            <li>了解 W3C 规范以及 ES6 开发要求</li>
+                            <li>了解 C/C++、Java、Pyhton 等基础程序设计语言、具有 Web 软件开发思想</li>
+                            <li>了解浏览器渲染原理</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="self-evaluation">
+                    <h4 class="interval"><span>自我评价</span></h4>
+                    <p>积极乐观、注重团队合作、学习能力强、具有良好的沟通能力以及团队精神、能够合理分配时间。</p>
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+    <canvas id="cvs"></canvas>
+    <script src="./js/canvas.js"></script>
 </body>
+
 </html>
