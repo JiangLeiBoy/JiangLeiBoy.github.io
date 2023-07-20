@@ -1,8 +1,15 @@
 // 分辨率适配
 const reize = () => {
-    let curViewWidth = window.innerWidth || document.body.clientWidth;
+    let curViewWidth = document.body.clientWidth;
     let defaultWidth = 1280;
-    if (curViewWidth < 1280) {
+    let resume = document.querySelector(".resume")
+    if (curViewWidth < 500 && resume) {
+        let h2 = document.createElement('h2')
+        h2.innerText = "I'm sorry, 暂时未适配移动端设备,请在pc端打开";
+        h2.id = "h2"
+        resume.replaceWith(h2)
+        defaultWidth = 375;
+    } else if (curViewWidth < 1280 && curViewWidth > 500) {
         curViewWidth = 1280;
     } else if (curViewWidth > 1980) {
         curViewWidth = 1980;
@@ -63,4 +70,5 @@ window.onresize = () => {
     clearInterval(timer)
     reize();
     drawByCanvas();
+    location.reload()
 }
